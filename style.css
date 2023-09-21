@@ -1,0 +1,86 @@
+body{
+align-items: center;
+    /* Agrega un fondo de color degradado multicolor con animación */
+    background: linear-gradient(-32deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 600% 600%;
+    animation: Gradient 15s ease infinite;
+}
+    @keyframes gradient-bg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+    max-width: 100%;
+    
+
+}
+
+/* Establece el ancho, el relleno, el margen, la visualización, el borde y el color de fondo de los campos de texto y contraseña */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Establece el ancho, el relleno, el margen, la visualización, el borde y el color de fondo de los campos de texto y contraseña */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Cambia el color de fondo y el contorno de los campos de texto y contraseña cuando están enfocados */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Establece el color de fondo, el color del texto, el relleno, el margen, el borde, el cursor, el ancho y la opacidad del botón */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Cambia la opacidad del botón cuando se pasa el ratón por encima */
+button:hover {
+    opacity:1;
+}
+
+form
+{
+width: 80%;
+display: flex;
+text-align: center;
+position: absolute;
+left: 200px;
+top:200px;
+right: 200px;
+
+}
+
+.conteiner
+{
+width: 80%;
+text-align: center;
+}
