@@ -1,27 +1,31 @@
 body{
 align-items: center;
-    /* Agrega un fondo de color degradado multicolor con animación */
-    background: linear-gradient(-32deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 600% 600%;
-    animation: Gradient 15s ease infinite;
+overflow: hidden;
 }
-    @keyframes gradient-bg {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+ 
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fondoMovimiento 10s linear infinite;
+    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff3357);
+    background-size: 400% 400%;
+}
+
+@keyframes fondoMovimiento {
+    0% {
+        background-position: 0% 0%;
     }
-
-
-    max-width: 100%;
-    
-
+    100% {
+        background-position: 100% 100%;
+    }
 }
+
+
 
 /* Establece el ancho, el relleno, el margen, la visualización, el borde y el color de fondo de los campos de texto y contraseña */
 input[type=text], input[type=password] {
