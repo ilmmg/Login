@@ -1,13 +1,13 @@
-const mostrarContrasenaCheckbox = login.html.getElementById('mostrarcontrasena');
-const contrasenaInput = login.html.getElementById('contrasena');
+const mostrarcontrasena = login.html.getElementById('mostrarcontrasena');
+const contrasena = login.html.getElementById('contrasena');
 
-mostrarContrasenaCheckbox.addEventListener('change', function() {
-    if (mostrarContrasenaCheckbox.checked) {
+mostrarContrasena.addEventListener('change', function() {
+    if (mostrarcontrasena.checked) {
         // Mostrar la contraseña cuando el checkbox esté marcado
-        contrasenaInput.type = 'text';
+        contrasena.type = 'text';
     } else {
         // Ocultar la contraseña cuando el checkbox esté desmarcado
-        contrasenaInput.type = 'password';
+        contrasena.type = 'password';
     }
 });
 
