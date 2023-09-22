@@ -58,17 +58,7 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 
-/* Estilos para mostrar el campo de contraseña cuando el checkbox esté marcado */
-#mostrarContrasena:checked ~ #contrasena[type="password"] {
-    -webkit-text-security: none; /* Mostrar la contraseña en texto sin formato */
-    text-security: none;
-}
 
-/* Estilos para ocultar el campo de contraseña por defecto */
-#contrasena[type="password"] {
-    -webkit-text-security: disc; /* Para navegadores basados en WebKit como Chrome y Safari */
-    text-security: disc; /* Para navegadores que admiten la propiedad text-security */
-}
 
 @keyframes fondoboton {
     0% {background-position: 0% 50%;}
