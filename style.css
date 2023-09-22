@@ -1,8 +1,16 @@
 body{
 align-items: center;
 overflow: hidden;
+font-family:Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
 }
- 
+
+
+
+@keyframes fondoMovimiento {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 
 .fondo {
     position: absolute;
@@ -11,19 +19,12 @@ overflow: hidden;
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: fondoMovimiento 10s linear infinite;
-    background: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #ff3357);
-    background-size: 400% 400%;
+    animation: fondoMovimiento 20s  ease infinite;
+    background: linear-gradient(-45deg, #8D49A2, #9850AF,#AB5AC5,#BD61DB,#CC68EC, #D490EA, #C09BCC, #A284AC,#7D6287, #6B4A78, #633575, #792F96, #9332B9, #B14CD8);
+    background-size: 600% 600%;
 }
 
-@keyframes fondoMovimiento {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
+
 
 
 
@@ -47,6 +48,9 @@ input[type=text], input[type=password] {
     border: none;
     background: #f1f1f1;
 }
+
+
+
 
 /* Cambia el color de fondo y el contorno de los campos de texto y contraseña cuando están enfocados */
 input[type=text]:focus, input[type=password]:focus {
@@ -54,6 +58,23 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 
+/* Estilos para mostrar el campo de contraseña cuando el checkbox esté marcado */
+#mostrarContrasena:checked ~ #contrasena[type="password"] {
+    -webkit-text-security: none; /* Mostrar la contraseña en texto sin formato */
+    text-security: none;
+}
+
+/* Estilos para ocultar el campo de contraseña por defecto */
+#contrasena[type="password"] {
+    -webkit-text-security: disc; /* Para navegadores basados en WebKit como Chrome y Safari */
+    text-security: disc; /* Para navegadores que admiten la propiedad text-security */
+}
+
+@keyframes fondoboton {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 /* Establece el color de fondo, el color del texto, el relleno, el margen, el borde, el cursor, el ancho y la opacidad del botón */
 button {
     background-color: #4CAF50;
@@ -64,6 +85,9 @@ button {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    animation: fondoboton 20s  ease infinite;
+    background: linear-gradient(90deg, #B14CD8,#9332B9,#792F96 , #633575, #6B4A78,#7D6287 , #A284AC,#C09BCC,#D490EA,#CC68EC,#BD61DB,#AB5AC5,#9850AF, #8D49A2);
+    background-size: 600% 600%;
 }
 
 /* Cambia la opacidad del botón cuando se pasa el ratón por encima */
@@ -88,3 +112,15 @@ right: 200px;
 width: 80%;
 text-align: center;
 }
+
+
+
+h1{
+display: flex;
+position: absolute;
+left: 549px;
+font-family:Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif ;
+top:45px;
+}
+
+

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>LOGIN</title>
 </head>
-<body>
+<img>
     <div class="fondo"></div>
         <h1>LOGIN</h1>
         <form action="/login" method="post">  <!-- Inicio del formulario de inicio de sesión -->
@@ -16,14 +16,15 @@
                 <input type="text" placeholder="Introduce tu nombre de usuario" name="id_usuario" required> <!-- Campo de entrada para el nombre de usuario -->
 
                 <label for="id_contraseña"><b>Contraseña</b></label> <!-- Etiqueta para el campo de contraseña -->
-                <input type="password" placeholder="Introduce tu contraseña" name="id_contraseña" required> <!-- Campo de entrada para la contraseña -->
+                <input type="password" id="contraseña" placeholder="Introduce tu contraseña" name="id_contraseña" required> <!-- Campo de entrada para la contraseña -->
+                <label for="mostrarContrasena">Mostrar Contraseña</label>
+                <input type="checkbox" id="mostrarcontrasena">
 
                 <button type="submit">INGRESAR</button> <!-- Botón para enviar el formulario -->
                 <a href="">¿olvidaste tu contraseña picaron ;) ?</a>
             </div>
             
         </form>
-
-   
+        <script src="modo.js"></script>
 </body>
 </html>
