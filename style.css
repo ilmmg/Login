@@ -38,7 +38,7 @@ input[type=text], input[type=password] {
 
 
 /* Establece el ancho, el relleno, el margen, la visualización, el borde y el color de fondo de los campos de texto y contraseña */
-input[type=text], input[type=password] input[type=checkbox]{
+input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px  90px ;
@@ -49,12 +49,17 @@ input[type=text], input[type=password] input[type=checkbox]{
 
 
 
-
+label{
+    display: flex;
+    position: relative;
+    left: 50%;
+ 
+}
 
 
 /* Cambia el color de fondo y el contorno de los campos de texto y contraseña cuando están enfocados */
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #b9b9b9;
     outline: none;
 }
 
@@ -83,7 +88,7 @@ button {
 
 /* Cambia la opacidad del botón cuando se pasa el ratón por encima */
 button:hover {
-    opacity:1;
+    opacity:3;
 }
 
 form
@@ -95,16 +100,14 @@ position: absolute;
 left:130px;
 top:200px;
 right: 200px;
-border: 2px solid;
 text-align:  center;
-
+border: 1px solid black;
 }
 
 .conteiner
 {
 width: 80%;
 text-align: center;
-border: 1px black;
 }
 
 
